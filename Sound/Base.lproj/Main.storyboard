@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zws-7j-bK7">
-                                <rect key="frame" x="95" y="453" width="224" height="214"/>
+                                <rect key="frame" x="95" y="64" width="224" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="drumImage" title=""/>
@@ -25,20 +25,44 @@
                                     <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XpM-0S-gDk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT7-cs-ea6">
+                                <rect key="frame" x="96" y="342" width="224" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pianoImage" title=""/>
+                                <connections>
+                                    <action selector="touchDownPianoButton" destination="BYZ-38-t0r" eventType="touchDown" id="7vs-pI-V1Z"/>
+                                    <action selector="touchUpPianoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="t2T-fv-s8A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-uk-8Sl">
+                                <rect key="frame" x="96" y="601" width="224" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="guitarImage" title=""/>
+                                <connections>
+                                    <action selector="touchDownGuitarButton" destination="BYZ-38-t0r" eventType="touchDown" id="drA-db-aW3"/>
+                                    <action selector="touchUpGuitarButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="A52-lx-twe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.070588238540000001" green="0.070588238540000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="drumButton" destination="Zws-7j-bK7" id="GAc-xd-8Zb"/>
+                        <outlet property="guitarButton" destination="aPD-uk-8Sl" id="Ucn-lP-GhT"/>
+                        <outlet property="pianoButton" destination="NT7-cs-ea6" id="esr-c7-gY3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="125"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="drumImage" width="200" height="200"/>
+        <image name="guitarImage" width="200" height="200"/>
+        <image name="pianoImage" width="200" height="200"/>
     </resources>
 </document>
